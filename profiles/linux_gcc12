@@ -10,5 +10,7 @@ build_type=Release
 [options]
 [build_requires]
 [conf]
-tools.build:compiler_c==/usr/bin/gcc
-tools.build:compiler_cxx=/usr/bin/g++
+tools.cmake.cmaketoolchain:generator=Ninja
+[env]
+CC==/usr/bin/gcc
+CXX=/usr/bin/g++
